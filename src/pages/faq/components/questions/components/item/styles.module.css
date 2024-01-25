@@ -1,0 +1,16 @@
+.item div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+.item div strong {
+    font-size: 1rem;
+    color: var(--title-color);
+}
+.item p {
+    font-size: 0.9rem;
+    color: var(--paragraph-color);
+    line-height: 25px;
+}

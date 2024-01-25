@@ -1,0 +1,106 @@
+.container {
+    width: 100%;
+    background: linear-gradient(
+            314deg,
+            rgba(26, 24, 41, 0.763),
+            rgba(0, 0, 0, 0.76)
+        ),
+        url(./assets/blog1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container .box {
+    margin: auto;
+    padding-top: 12rem;
+    width: min(650px, 100%);
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.container .box small {
+    color: var(--main-color);
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: "SpaceGrotesk-Medium";
+    position: relative;
+}
+.container .box small::after,
+.container .box small::before {
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    content: "";
+}
+.container .box small::before {
+    left: -60px;
+}
+
+.container .box h1 {
+    color: #fff;
+    font-size: 4.5rem;
+}
+.container .box h1 span {
+    color: var(--main-color);
+}
+
+.container .box p {
+    color: #ffffffcc;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+.container .box .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.container .box .row a {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: var(--main-color);
+    padding: 14px 30px;
+    font-family: "SpaceGrotesk-Medium";
+    border: 1.5px solid transparent;
+    transition: 0.5s;
+}
+.container .box .row a:last-child {
+    border: 1.5px solid var(--main-color);
+    background: none;
+}
+.container .box .row a:first-child:hover {
+    background-color: var(--primary-color);
+}
+.container .box .row a:last-child:hover {
+    border: 1.5px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 950px) {
+    .container .box h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 0 5%;
+    }
+}
+@media (max-width: 500px) {
+    .container .box .row {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .container .box .row a {
+        width: 60%;
+    }
+}

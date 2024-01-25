@@ -1,0 +1,54 @@
+.container {
+    width: 100%;
+    background: linear-gradient(
+            314deg,
+            rgba(26, 24, 41, 0.763),
+            rgba(0, 0, 0, 0.76)
+        ),
+        url(./assets/blog3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container .box {
+    margin: auto;
+    padding: 0 6%;
+    padding-top: 12rem;
+}
+
+.container .box h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 8rem;
+}
+.container .box div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+    color: #fff;
+}
+.container .box div a {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.container .box div span {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 950px) {
+    .container .box h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 0 5%;
+    }
+}

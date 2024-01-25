@@ -1,0 +1,81 @@
+.container {
+    width: 100%;
+    background-color: rgba(45, 46, 51, 1);
+    padding: 0;
+    margin: 0;
+}
+.container .row {
+    padding: 50px 0;
+    width: min(1200px, 90%);
+    margin: auto;
+    color: #f8fff8;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.container div {
+    width: 25%;
+}
+.container .social_media_links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.container div a,
+.container div p {
+    color: #e1e1e1;
+    font-size: 0.9rem;
+    line-height: 30px;
+}
+
+.container div h3 {
+    margin-bottom: 20px;
+}
+.container div a {
+    margin-bottom: 15px;
+    display: block;
+}
+.container div a:hover {
+    color: #ee711c;
+}
+
+.container .reference {
+    width: 100%;
+    background-color: rgba(34, 36, 41, 0.97);
+    padding: 40px 5%;
+    color: #e1e1e1;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.container .reference a {
+    all: unset !important;
+    color: var(--main-color) !important;
+    cursor: pointer !important;
+    margin-left: 10px !important;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .container div {
+        gap: unset !important;
+    }
+    .container div {
+        width: 48%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .container div {
+        width: 100%;
+    }
+}

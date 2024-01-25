@@ -1,0 +1,55 @@
+.item {
+    width: 32%;
+    min-height: 200px;
+    background-color: #fff;
+    background-image: url(../../assets/service-box-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px 0px rgba(145, 139, 187, 0.05);
+}
+
+.item span {
+    color: var(--title-color);
+    font-size: 1.3rem;
+    font-family: "SpaceGrotesk-Medium";
+}
+.item p {
+    color: var(--paragraph-color);
+    font-size: 1rem;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.item a {
+    display: inline-flex;
+    gap: 10px;
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: var(--main-color);
+    padding: 14px 30px;
+    font-family: "SpaceGrotesk-Medium";
+    border: 1.5px solid var(--main-color);
+    transition: 0.5s;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.item a:hover {
+    background: none;
+    color: #000;
+}
+
+@media (max-width: 1120px) {
+    .item {
+        width: 48%;
+    }
+}
+@media (max-width: 675px) {
+    .item {
+        width: 100%;
+    }
+}

@@ -1,0 +1,37 @@
+.container {
+    padding: 20px 5%;
+    padding-right: 10%;
+    width: 100%;
+    background-color: rgba(34, 36, 41, 0.97);
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+.container nav {
+    width: min(1200px, 100%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container nav div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.container nav div a {
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.4s;
+    font-family: "SpaceGrotesk-Medium";
+}
+.container nav div a:hover {
+    color: var(--main-color);
+}
+
+@media (max-width: 900px) {
+    .container {
+        display: none;
+    }
+}

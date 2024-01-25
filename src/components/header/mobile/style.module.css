@@ -1,0 +1,46 @@
+.container {
+    padding: 20px 5%;
+    width: 100%;
+    background-color: rgba(34, 36, 41, 0.97);
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+.container nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container nav svg {
+    cursor: pointer;
+}
+
+.container div {
+    z-index: 4;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: min(300px, 70%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(34, 36, 41, 0.97);
+    padding: 20px;
+}
+.container div a {
+    color: #fff;
+    font-size: 0.97rem;
+    transition: 0.4s;
+}
+.container div a:hover {
+    color: #ee711c;
+}
+
+@media (min-width: 900px) {
+    .container {
+        display: none;
+    }
+}

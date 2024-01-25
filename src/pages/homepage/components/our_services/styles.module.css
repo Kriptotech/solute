@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+    background: rgba(246, 246, 248, 1);
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container .box {
+    margin: auto;
+    width: min(1200px, 100%);
+}
+
+.container .box .row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+@media (max-width: 1250px) {
+    .container {
+        padding: 0 5%;
+        padding-bottom: 50px;
+    }
+}
